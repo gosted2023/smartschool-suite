@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
   res.send('✅ SmartSchool Backend Online');
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
   console.log(`Backend server running on port ${PORT}`);
 });
