@@ -3,13 +3,8 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 
 // Load .env variables
-dotenv.config();
-
-const app = express();
-app.use(cors());
-app.use(express.json());
-
-const db = require('./config/db');
+require('dotenv').config();
+const port = process.env.PORT || 10000;
 
 app.get('/db-test', async (req, res) => {
   try {
